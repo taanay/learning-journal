@@ -1,0 +1,40 @@
+*, body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Header */
+
+header {
+    height: 60px;
+    padding-top: 20px;
+}
+
+nav > ul {
+    display: flex;
+}
+
+a{ 
+    text-decoration: none;
+    color: inherit;
+}
+
+li { list-style: none; }
+
+.head { font-weight: 700; }
+
+.about, .home { font-weight: 600; }
+
+.home { margin-left: auto; }
+
+.about{
+    margin-right: 24px;
+    padding-left: 30px;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-right: 3.5px;
+    display: inline-block;
+}
