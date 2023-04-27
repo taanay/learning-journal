@@ -11,21 +11,32 @@
     <title>Document</title>
 </head>
 <body>
+
     <header>
         <nav>
             <ul>
                 <li class="logo"><img src="images/logo.png" alt="logo of my learning journal"></li>
                 <li class="head">My learning journal</li>
-                <li class="home"><a class="nav-link" href="#">HOME</a></li>
-                <li class="about"><a class="nav-link" href="#">ABOUT ME</a></li>
+                <li class="home"><a id="home-el" class="nav-link" href="#">HOME</a></li>
+                <li class="about"><a id="about-me-el" class="nav-link" href="#">ABOUT ME</a></li>
             </ul>
         </nav>
     </header>
+
     <div id="hero-el" class="hero-el">
         <p class="date">April 25, 2023</p>
         <h1 class="blog-head">My new journey as a <span class="ctn">bootcamp student</span></h1>
         <p class="blog-head-content">After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
     </div>
+
+    <div id="view-more-el" class="view-more-el">
+            <!-- view more content -->
+    </div>
+
+    <div id="about-me-block" class="about-me-block">
+            <!-- about me content -->
+    </div>
+
     <main>
         <div class="wrapper">
             <section>
@@ -46,15 +57,17 @@
                 <h2>Blog 3</h2>
                 <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
             </section>
-            <div class="view-more">
+            <div id="view-more" class="view-more">
                 <a id="view-more-link" class="view-more-link" href="#">View More</a>
             <div>
         </div>
     </main>
+
     <footer>
         <p>My Learning Journal</p>
         <p>Copyright &copy; 2023</p>
     </footer>
+
     <script src="index.js" type="module"></script>
 </body>
 </html>

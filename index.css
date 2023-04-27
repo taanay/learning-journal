@@ -65,7 +65,7 @@ li { list-style: none; }
 
 .hero-el-after {
     max-width: 374px;
-    height: 1200px;
+    height: 1230px;
     background: none;
     margin: -62px auto;
 }
@@ -143,3 +143,14 @@ footer {
 footer > p { font-weight: 700; }
 
 footer p + p { font-weight: 100; }
+
+
+/* about me */
+.about-me-block {
+    max-width: 374px;
+    margin: 1.625em auto;
+}
+
+.avatar-img {
+    margin-bottom: 0.625em;
+}
