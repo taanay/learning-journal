@@ -54,12 +54,13 @@ function renderAboutMe() {
     aboutMeBlock.style.display = "block"
     aboutMeBlock.innerHTML = 
     `
+        <div class="about-head">
         <img id="avatar-img" class="avatar-img" src="images/avatar.png">
 
         <h1 class="blog-head">Hi there! My name is <span>Roku and welcome to<span> <span>my learning journal.</span></h1>
 
         <p class="blog-head-content">After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
-
+        </div>
         <div class="description">
 
             <p class="describe-head">How I stay committed to learning</p>

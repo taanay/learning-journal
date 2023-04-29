@@ -14,6 +14,10 @@ h4 {
     font-size: 1em;
 }
 
+img {
+    background-size: cover;
+}
+
 /* Header */
 
 header {
@@ -61,7 +65,12 @@ li { list-style: none; }
     padding: 0 1.125em;
 }
 
+
 /* view more */
+
+.view-more-el, .about-me-block{
+    display: none;
+}
 
 .hero-el-after {
     max-width: 374px;
@@ -106,7 +115,11 @@ h1 > span { display: inline-block; }
 
 .wrapper {
     max-width: 374px;
-    margin: 2.125em auto;
+    margin: 2.125em 6em;
+}
+
+.wrapper > section {
+    max-width: 309px;
 }
 
 section img+p, h2{
@@ -115,6 +128,11 @@ section img+p, h2{
 
 section img + p {
     margin-top: 0.875em;
+}
+
+section > img {
+    max-width: 300px;
+    height: 232px;
 }
 
 h2 + p {
@@ -129,6 +147,7 @@ h2 + p {
 
 .view-more {
     text-align: center;
+    margin-bottom: 3.125em;
 }
 
 /* footer */
@@ -154,3 +173,71 @@ footer p + p { font-weight: 100; }
 .avatar-img {
     margin-bottom: 0.625em;
 }
+
+/* media queries */
+
+@media screen and (min-width: 650px) {
+
+    h1 > span {
+        display: inline;
+    }
+
+    .hero-el {
+        height: 488px;
+        background-size: cover;
+    }
+
+    .hero-el > div {
+        width: 670px;
+        padding: 200px 0 0 56px;
+    }
+    
+    .wrapper {
+        display: grid;
+        max-width: 980px;
+        margin: 2.125em auto;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 0.5em;
+    }
+
+    .view-more-el {
+        max-width: 844px;
+        height: 1120px;
+        /* border: 2px solid black; */
+        margin: 0 auto;
+    }
+
+    .hero-img {
+        width: 980px;
+        height: 488px;
+        margin-left: -50px;
+    }
+
+    .about-me-block {
+        max-width: 911px;
+    }
+
+    .about-me-block > .about-head {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "avatar header header header"
+            "avatar para para para"
+        ;
+        gap: 0.5em;
+    }
+
+    .blog-head-content {
+        grid-area: para;
+    }
+
+    .blog-head {
+        margin: 20px 0 -5px 0px;
+        grid-area: header;
+    }
+
+    .avatar-img {
+        grid-area: avatar;
+    }
+
+  }
